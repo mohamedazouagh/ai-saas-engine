@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AI SaaS Engine",
-  description: "Starter for the AI SaaS Engine product.",
+  title: "PolicyProof",
+  description:
+    "Warranty, return, and damage-claim answers for furniture retailers — with page citations.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
