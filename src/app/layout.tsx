@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PolicyProof",
+  title: "ReconDesk",
   description:
-    "Warranty, return, and damage-claim answers for furniture retailers — with page citations.",
+    "Reconcile supplier documents against Shopify inventory and surface the exceptions.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

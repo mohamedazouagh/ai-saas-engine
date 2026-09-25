@@ -5,12 +5,12 @@ export default function Home() {
     <main className="flex flex-1 flex-col items-center justify-center px-6 py-24 text-center">
       <div className="flex max-w-2xl flex-col items-center gap-6">
         <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-          Warranty answers, with the page to prove it.
+          Find the shipment discrepancies before they find you.
         </h1>
         <p className="text-lg text-gray-500 dark:text-gray-400">
-          PolicyProof searches your suppliers&apos; warranty, return, and
-          damage-claim PDFs and answers your team&apos;s questions with exact
-          page citations — or tells you when it can&apos;t find the answer.
+          ReconDesk reconciles supplier documents against Shopify inventory
+          and surfaces the exceptions — every SKU checked, every row cited
+          back to the page or line it came from.
         </p>
         <div className="mt-2 flex items-center gap-4">
           <Link

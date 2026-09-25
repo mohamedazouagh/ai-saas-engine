@@ -1,7 +1,7 @@
 import { requireOrgContext } from "@/lib/org";
 import { signOut } from "@/app/auth/actions";
 import { UploadForm } from "./UploadForm";
-import { QueryForm } from "./QueryForm";
+import { ReconciliationPanel } from "./ReconciliationPanel";
 import { DocumentList, type DocumentRow } from "./DocumentList";
 import { QueryHistory, type QueryRow } from "./QueryHistory";
 
@@ -32,7 +32,7 @@ export default async function DashboardPage() {
             {org?.name ?? "Dashboard"}
           </h1>
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            PolicyProof — warranty &amp; returns answers
+            Supplier ↔ Shopify inventory reconciliation
           </p>
         </div>
         <form action={signOut}>
@@ -47,10 +47,10 @@ export default async function DashboardPage() {
 
       <section>
         <h2 className="text-sm font-medium text-gray-500 dark:text-gray-400">
-          Ask a question
+          Reconciliation
         </h2>
         <div className="mt-3">
-          <QueryForm />
+          <ReconciliationPanel />
         </div>
       </section>
 
@@ -66,7 +66,7 @@ export default async function DashboardPage() {
 
       <section>
         <h2 className="text-sm font-medium text-gray-500 dark:text-gray-400">
-          Recent questions
+          Recent reconciliations
         </h2>
         <div className="mt-3">
           <QueryHistory queries={(queries ?? []) as QueryRow[]} />

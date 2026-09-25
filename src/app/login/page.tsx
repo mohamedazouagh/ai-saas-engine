@@ -28,7 +28,7 @@ export default function LoginPage() {
       <div className="w-full max-w-sm">
         <h1 className="text-2xl font-semibold tracking-tight">Sign in</h1>
         <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-          PolicyProof — warranty & returns answers for your team.
+          ReconDesk — supplier ↔ Shopify inventory reconciliation.
         </p>
 
         <form action={formAction} className="mt-8 flex flex-col gap-4">

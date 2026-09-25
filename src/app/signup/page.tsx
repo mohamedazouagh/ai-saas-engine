@@ -46,7 +46,7 @@ export default function SignupPage() {
                 name="orgName"
                 type="text"
                 required
-                placeholder="Acme Furniture Co."
+                placeholder="Acme Distribution Co."
                 className="rounded-md border border-gray-300 px-3 py-2 text-sm outline-none focus:border-black dark:border-gray-700 dark:bg-transparent dark:focus:border-white"
               />
             </div>
