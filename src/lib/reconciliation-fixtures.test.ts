@@ -41,10 +41,15 @@ describe("real ingestion pipeline on test fixtures", () => {
   it("extracts and chunks the supplier PDF fixture with all five SKU lines", async () => {
     const buffer = fs.readFileSync(PDF_PATH);
     const pages = await extractPages(buffer);
+    expect(pages.length).toBeGreaterThan(0);
     expect(pages).toHaveLength(1);
+    expect(pages[0].page).toBe(1);
+    expect(Number.isInteger(pages[0].page)).toBe(true);
+    expect(pages[0].text.length).toBeGreaterThan(0);
 
     const chunkTexts = chunkPageText(pages[0].text);
     const combined = chunkTexts.join(" ");
+    expect(combined).toContain("RD-001");
     for (const sku of ["RD-001", "RD-002", "RD-003", "RD-005"]) {
       expect(combined).toContain(sku);
     }
